@@ -66,7 +66,7 @@ platform/devenv/configure-shell:
 	@if [ -d $${HOME}/.dso_zsh ]; then \
 		rm -rf $${HOME}/.dso_zsh; \
 	fi
-	@git clone https://github.com/nexient-llc/dso-zsh.git $${HOME}/.dso_zsh;
+	@git clone https://github.com/launchbynttdata/dso-zsh.git $${HOME}/.dso_zsh;
 	@if [ ! -d $${HOME}/.m2 ]; then \
 		mkdir -p $${HOME}/.m2; \
 	fi
@@ -84,7 +84,7 @@ platform/devenv/configure-shell:
 	@if [ -d $${HOME}/.dso_magicdust ]; then \
 		rm -rf $${HOME}/.dso_magicdust; \
 	fi
-	@git clone https://github.com/nexient-llc/magicdust.git $${HOME}/.dso_magicdust;
+	@git clone https://github.com/launchbynttdata/magicdust.git $${HOME}/.dso_magicdust;
 	@if [ -d $${HOME}/.dso_magicdust ]; then \
 		cd $${HOME}/.dso_magicdust; \
 		python3 -m venv $${HOME}/.venv-dso; \
